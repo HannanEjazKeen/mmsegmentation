@@ -487,6 +487,29 @@ def hsidrive_palette():
             [0, 0, 255], [102, 51, 0], [255, 255, 0], [0, 207, 250],
             [255, 166, 0], [0, 204, 204]]
 
+def mastr1325_classes():
+    return ['environment','water','sky','unreserved','unknown']
+
+def mastr1325_palette():
+    return [[255,0,0],[0,255,0],[0,0,255],[0,0,0],[255,255,255]]
+
+def aerialfluvial_classes():
+    return ['environment','water']
+
+def aerialfluvial_palette():
+    return [[255,0,0],[0,255,0]]
+
+def rosebud_classes():
+    return ['environment','water']
+
+def rosebud_palette():
+    return [[255,0,0],[0,255,0]]
+
+def uvinland_classes():
+    return ['environment','water']
+
+def uvinland_palette():
+    return [[255,0,0],[0,255,0]]
 
 dataset_aliases = {
     'cityscapes': ['cityscapes'],
@@ -510,9 +533,12 @@ dataset_aliases = {
     'hsidrive': [
         'hsidrive', 'HSIDrive', 'HSI-Drive', 'hsidrive20', 'HSIDrive20',
         'HSI-Drive20'
-    ]
+    ],
+    'mastr1325': ['masttr1325'],
+    'aerialfluvial': ['aerialfluvial'],
+    'rosebud': ['rosebud'],
+    'uvinland': ['uvinland']
 }
-
 
 def get_classes(dataset):
     """Get class names of a dataset."""
